@@ -1,4 +1,4 @@
-FROM registry.redhat.io/ubi8/ubi
+FROM registry.redhat.io/ubi8/ubi:latest
 
 # This system is not receiving updates. You can use subscription-manager on the host to register and assign subscriptions.
 RUN yum update --disablerepo=* --enablerepo=ubi-8-appstream --enablerepo=ubi-8-baseos -y && rm -rf /var/cache/yum
